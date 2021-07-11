@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="5dp"
+    android:layout_marginBottom="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="id_pinjam"
+                android:id="@+id/Id_pinjam" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nama_peminjam"
+                android:layout_below="@id/Id_pinjam"
+                android:id="@+id/nama_peminjam" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No HP"
+                android:layout_below="@id/nama_peminjam"
+                android:id="@+id/no_hp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kabel"
+                android:layout_below="@id/no_hp"
+                android:id="@+id/kabel"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:layout_below="@id/kabel"
+                android:id="@+id/total"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Order"
+                android:layout_below="@id/total"
+                android:id="@+id/tgl_pinjam"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:layout_below="@id/tgl_pinjam"
+                android:id="@+id/status"/>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="70dp">
+            <ImageButton
+                android:id="@+id/done"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/done"
+                />
+            <ImageButton
+                android:id="@+id/delete"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/delete"
+                android:layout_marginLeft="15dp"
+                />
+        </LinearLayout>
+
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/textViewOptions"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:padding="16dp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:text="⋮"-->
+<!--                android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>-->
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
